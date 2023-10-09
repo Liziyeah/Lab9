@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(25, 25, 35);
+    color: white;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    background-color: rgb(25, 25, 35);
+    width: 25rem;
+    height: 27rem;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
+    margin-top: 3rem;
+}
+
+.facebook {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.facebook span img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-right: 5px;
+    background-color: white;
+}
+.user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-right: 5px;
+    background-color: white;
+}
+.facebook button {
+    padding: 0.2rem;
+    cursor: pointer;
+    background-color: rgb(100, 100, 120);
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.modal {
+    display: none;
+    background-color: rgb(45, 45, 55);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.modal.modal__aparece {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(75, 75, 90);
+    color: darkgray;
+    display: block;
+    width: 300px;
+    height: 150px;
+    padding: 0.3rem;
+    border-radius: 5px;
+    z-index: 1;
+    box-shadow: -2px -2px 2px rgb(25, 25, 35);
+}
+
+.modal-header {
+    margin-top: -1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 0.5rem;
+}
+
+.modal-header h2 {
+    margin: 0;
+    color: darkgray;
+}
+
+.modal-header .cerrar {
+    border-radius: 100%;
+    border-style: none;
+    color: darkgray;
+    background-color: rgb(100, 100, 120);
+}
+
+button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-size: small;
+    transition: background-color 0.3s;
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(49, 49, 199);
+}
+
+#submit {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.modal-header,
+.main {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+#text {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: lightgray;
+    font-size: large;
+}
+
+#exit {
+    background-color: lightgray;
+    color: darkgray;
+    transition: none;
+}
+.publicar {
+    background-color: lightgray;
+}
+
+.publicar:hover {
+    background-color: rgb(20, 96, 212);
+    color: lightgray;
+}
+
+.cerrar {
+    background-color: rgb(100, 100, 120);
+    color: darkgray;
+}
+
+.cerrar:hover {
+    background-color: rgb(120, 120, 140);
+}
+
+.user h3 {
+    display: inline-block;
+    margin: 0;
+    color: lightgray;
+}

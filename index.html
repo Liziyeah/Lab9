@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script type="module" src="./index.js" defer></script>
+        <title>Modal</title>
+        <link rel="stylesheet" href="./estilos.css" />
+    </head>
+    <body>
+        <section id="container">
+            <div class="facebook">
+                <span><img src="user-exclamation.png" alt="#" /></span>
+                <button id="think">En que estas pensando?</button>
+            </div>
+            <div class="modal" style="display: none">
+                <header class="modal-header">
+                    <h2>Crear Publicación</h2>
+                    <button id="exit">x</button>
+                </header>
+                <main>
+                    <div class="user">
+                        <span
+                            ><img src="./user-exclamation.png" alt="#"
+                        /></span>
+                        <h3>Mariana Bochita</h3>
+                    </div>
+                    <input type="text" id="text" />
+                    <button id="submit">Publicar</button>
+                </main>
+            </div>
+            <div class="posts"></div>
+        </section>
+    </body>
+</html>
